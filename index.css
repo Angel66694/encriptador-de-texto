@@ -64,3 +64,19 @@ button{
     -ms-border-radius:9PX;
     -o-border-radius:9PX;
 }
+
+footer{
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
