@@ -1,0 +1,44 @@
+:root{
+    --font-mono: ui-monospace, menlo, monaco, 'cascadia mono', 'segoe ui mono',
+    'fira mono', 'droid sans mono', 'courier new', monospace;
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/1170577.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: var(--font-mono);
+}
+
+section h2{
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #ffffff;
+    display: inline-block;
+}
+
+#logout{
+    border-bottom: 15%;
+    width: 10%;
+    margin-top: 1.5em;
+    background-color: #7a1e47f5;
+    color: #ffffff;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    border-radius:9PX;
+    -webkit-border-radius:9PX;
+    -moz-border-radius:9PX;
+    -ms-border-radius:9PX;
+    -o-border-radius:9PX;
+}
