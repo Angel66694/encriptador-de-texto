@@ -11,6 +11,10 @@
 }
 
 body {
+    background-image: url(img/pngtree-science-and-technology-light-effect-smart-blue-technology-background-picture-image_1473207.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: var(--font-mono);
 }
 
