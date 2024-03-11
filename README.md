@@ -12,3 +12,20 @@ creacion de formulario del login.html
 
 creacion del formulario de signup.html
 
+creacion del codigo del signup.html
+
+creacion del codigo del login.html
+
+creacion del archivo styles,css
+
+creacion del cogo style.css
+
+creacion del codigo del login.js
+
+creacion del codigo del signup.js
+
+creacion del codigo del index.html
+
+creacion del codigo del index.js
+
+actualizacion del README.md
