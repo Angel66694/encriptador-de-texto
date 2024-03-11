@@ -1,3 +1,9 @@
+//manda a la paguina login si no esta una sesion iniciada 
+const user = JSON.parse(localStorage.getItem('login_success')) || false
+if(!user){
+    window.location.href = 'login.html';
+}
+
 document.getElementById('logout').addEventListener("click", function(event){
 
     const mainSection = document.getElementById('logout');
@@ -5,11 +11,6 @@ document.getElementById('logout').addEventListener("click", function(event){
     //verifica si el clic se origino dentro de la seccion espesificada//
     if(mainSection.contains(targetElement)){
         //realiza la accion de cierre de sesion
-        const user = JSON.parse(localStorage.getItem('login_success')) || false
-if(!user){
-    window.location.href = 'login.html';
-}
-
     const logout = document.querySelector('#logout');
     const parrafo = document.getElementById('parrafo')
     logout,addEventListener('click', ()=>{
