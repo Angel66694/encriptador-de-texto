@@ -22,22 +22,22 @@ body {
 .marco{
     background-attachment: scroll;
     position: absolute;
-    width: 1000px;
-    height: 82%;
+    width: 80%;
+    height: 90%;
     float: initial;
     top: 6%;
-    left: 23%;
+    left: 9%;
     z-index: -1;
 }
 
 .marco2{
     background-attachment: scroll;
     position: absolute;
-    width: 70%;
-    height: 86%;
+    width: 85%;
+    height: 110%;
     float: initial;
-    top: 6%;
-    left: 14.5%;
+    top: 1%;
+    left: 6.5%;
     z-index: -1;
 }
 
@@ -57,24 +57,25 @@ section h1{
 
 .caja{
     background-color: #7a1e474d;
-    height: 40px;
-    width: 450px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    height: 4%;
+    width: 45%;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
 }
 
 .caja2{
     background-color: #7a1e474d;
-    height: 40px;
-    width: 650px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    height: 6%;
+    width: 45%;
+    margin-top: 5.5%;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
 }
 section h2{
     text-align: center;
@@ -82,6 +83,7 @@ section h2{
     margin-bottom: 1em;
     font-size: 2.5em;
     color: #ffffff;
+    display: inline-block;
 }
 
 section form{
@@ -89,11 +91,11 @@ section form{
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
     border: 2px solid rgba(28, 45, 194, 0.486);
 }
 
@@ -114,6 +116,7 @@ section form input{
     border: none;
     outline-color: rgba(101, 199, 161, 0.76);
     background-color: aliceblue;
+    -o-border-radius: 9px;
 }
 
 section form input[type=submit]{
@@ -159,34 +162,12 @@ section p a{
 
 .fondo{
     background-color: #7a1e474d;
-    height: 40px;
-    width: 400px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    height: 4%;
+    width: 40%;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
 }
 
-/*home*/
-
-#logout{
-    text-align: center;
-    background-color: #7a1e474d;
-    color: #fff;
-    font-family: var(--font-mono);
-    transition: var(--transition);
-    -webkit-transition: var(--transition);
-    -moz-transition: var(--transition);
-    -ms-transition: var(--transition);
-    -o-transition: var(--transition);
-    border: none;
-    padding: 0.5em;
-    border-radius: 9px;
-    margin-top: 1.5em;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    -ms-border-radius: 9px;
-    -o-border-radius: 9px;
-    font-size: 1em;
-}
