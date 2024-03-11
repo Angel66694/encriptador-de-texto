@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(img/pngtree-science-and-technology-light-effect-smart-blue-technology-background-picture-image_1473207.jpg);
+    background-image: url(img/1170577.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,6 +19,10 @@ body {
 }
 
 section{
+    background-image: url(img/1170577.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
@@ -48,7 +52,7 @@ section form{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.486);
+    border: 2px solid rgba(28, 45, 194, 0.486);
 }
 
 section form label{
@@ -66,14 +70,14 @@ section form input{
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     border: none;
-    outline-color: rgb(0, 81, 255);
+    outline-color: rgba(101, 199, 161, 0.76);
     background-color: aliceblue;
 }
 
 section form input[type=submit]{
     margin-top: 1.5em;
-    background-color: #003dff;
-    color: #fff;
+    background-color: #3ddda0;
+    color: #070707;
     font-family: var(--font-mono);
     transition: var(--transition);
 }
@@ -105,6 +109,8 @@ section p{
 
 section p a{
     text-decoration: none;
-    color: #003dff;
+    color: #071c61;
+    font-size: 1.5rem;
+    
 }
 
