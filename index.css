@@ -11,13 +11,19 @@ Global css
     --font:#e5e5e5;
     --white:#ffffff;
     --dark-blue:#0a3871;
+    --greey:#c5c5c5;
+    --fondo-tex:#9f0d4f4d;
+    --rgba:rgba(0,0,0,0.08);
+    --fondo-hover-boton:#c30a0abc;
+    --gree:#495057;
+    --boton:#E74C3C;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(img/1170577.jpg.);
+    background-image: url(img/1170577.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -70,9 +76,10 @@ div .cierre{
 div .tiulo{
     position: absolute;
     top: 1%;
-    left: 37%;
+    left: 25%;
     font: bold;
-    font-size: 1.7rem;
+    font-size: 2em;
+    color: var(--font);
     
 }
 
@@ -83,30 +90,388 @@ div .logout{
 
 }
 
+.logout{
+    width: 180px;
+    height: 25px;
+    padding: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 3px;
+    text-align: center;
+    color: var(--white);
+    background: var(--boton);
+    border: 1px solid var(--font);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+
+
 /*----------------------
 Principal
 ----------------------*/
 main{
     display: flex;
     flex-direction: row;
-    
+
+}
+
+.encriptador{
+    width: 60%;
+    margin: 168px 0px 0px 148px;
+    background: transparent;
+
+}
+
+.encriptada{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--greey);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    resize: none;
+    background: var(--fondo-tex);
+}
+
+.encriptada::placeholder, :focus{
+   color: var(--font);
+}
+
+.encriptador-aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+
 }
 
 
+.texto-aviso{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--font);
+}
+
+.conten-encriptado{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+
+}
+
+.btn-encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--boton);
+    border: 1px solid var(--font);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+
+}
+
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--boton);
+    border: 1px solid var(--font);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+
+.conten-encriptado button:active{
+    box-shadow: inset 2px 2px 4px var(--font);
+    inset: -3px -4px 8px var(--fondo-hover-boton);
+
+}
+
+.tarjeta{
+    width: 270px;
+    height: 580px;
+    background: var(--fondo-tex);
+    box-shadow: 10px 24px 32px -8px var(--greey);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    text-align: center;
+}
+
+.tarjeta-contenedor{
+    width: 265px;
+    margin: auto;
+    margin-top: 50%;
+    background: transparent;
+}
+
+.texto-uno{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    color: var(--white);
+    background: transparent;
+}
+
+.texto-dos{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--font);
+    background: transparent;
+}
+
+.evaluar{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 2px;
+    top: 0;
+    left: 0;
+    font-weight:400 ;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--gree);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus{
+    outline: none;
+
+}
+
+.btn-copiar{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--fondo-tex);
+    border: 1px solid var(--font);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-copiar:hover,
+.logout:hover{
+    background-color:var(--fondo-hover-boton);
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -o-transform: scale(0.97);
+
+}
+
+.btn-copiar:active{
+  transform: scale(0.85);
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  -o-transform: scale(0.85);
+  border: solid 3px var(--gree);
+  box-shadow: inset 1px 1px 3px black;
+  }
+
+
+  /*------------------------------------
+  Pie de pagina
+  ------------------------------------*/
 
 
 footer{
-    color: #fff;
+    margin-top: 15px;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
+    border-top: 2px solid var(--fondo-tex);
+    color:var(--gree);
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gree);
 }
 
+footer p{
+    color: var(--font);
+}
 
+.linke:hover{
+    color: var(--greey);
+    opacity: 0.8;
+}
+
+.github{
+    background: var(--greey);
+}
+.github:hover{
+    color: var(--greey);
+    opacity: 0.6;
+}
 .copyright{
-    color:#FFFFFF;
+    color:var(--font);
     font-size: 13px;
-    margin:20px;
+    margin:10px;
+}
+
+/*------------------------
+Media
+-----------------------*/
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .encriptador{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .conten-encriptado{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .encriptador-aviso{
+        position: inherit;
+        margin: 15px;
+    }
+    .tarjeta{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tarjeta-contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .img-oso{
+        display: none;
+    }
+
+    .btn-copiar{
+        position: inherit;
+        width: 100%;
+
+    }
+    .evaluar{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+
+}
+
+@media(max-width: 720px){
+    header.logo{
+       width: 100%;
+       background: var(--font);
+       padding: 2px;
+       left: 0;
+    }
+
+    .encriptador{
+       width: 90%;
+       font-size: 24px;
+
+    }
+
+    .conten-encriptado{
+        display: grid;
+        gap: 21px;
+    }
+
+    .tarjeta{
+        width: 90%;
+
+    }
+
+    .copyright{
+        font-size: 20px;
+    }
+
 }
