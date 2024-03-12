@@ -19,27 +19,6 @@ body {
     font-family: var(--font-mono);
 }
 
-.marco{
-    background-attachment: scroll;
-    position: absolute;
-    width: 80%;
-    height: 90%;
-    float: initial;
-    top: 6%;
-    left: 9%;
-    z-index: -1;
-}
-
-.marco2{
-    background-attachment: scroll;
-    position: absolute;
-    width: 85%;
-    height: 110%;
-    float: initial;
-    top: 1%;
-    left: 6.5%;
-    z-index: -1;
-}
 
 section{
     display: flex;
