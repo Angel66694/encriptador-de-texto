@@ -25,5 +25,16 @@ document.getElementById('logout').addEventListener("click", function(event){
 })
 
 
+//----------------seleccion de los elementos-------------------
+
+const btnEncriptar = document.querySelector(".btn-encriptar");
+const textEncriptar = document.querySelector(".encriptada");
 
 
+// ------------- boton encriptat-----------------
+btnEncriptar.addEventListener("click", e=>{
+    e.preventDefault();
+    let = texto = textEncriptar.value;
+    let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
+    console.log(txt);
+})
