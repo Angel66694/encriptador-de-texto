@@ -2,9 +2,7 @@
     --font-mono: ui-monospace, menlo, monaco, 'cascadia mono', 'segoe ui mono',
     'fira mono', 'droid sans mono', 'courier new', monospace;
     --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
 
-:root{
     --font:#e5e5e5;
     --white:#ffffff;
     --dark-blue:#0a3871;
@@ -123,29 +121,16 @@ section form input{
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     border: none;
+    -o-border-radius: 9px;
     outline-color: rgba(101, 199, 161, 0.76);
     background-color: aliceblue;
-    -o-border-radius: 9px;
 }
 
-section form input[type="email"]{
-    width: 100%;
-    margin-bottom: 1em;
-    padding: 0.8em;
-    border-radius: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    -ms-border-radius: 9px;
-    border: none;
-    outline-color: rgba(101, 199, 161, 0.76);
-    background-color: aliceblue;
-    -o-border-radius: 9px;
-}
 
 section form input[type=submit]{
     margin-top: 1.5em;
-    background-color: #7a1e47f5;
-    color: #ffffff;
+    background-color: var(--fondo-tex);
+    color: #bb0909;
     font-family: var(--font-mono);
     transition: var(--transition);
 }
@@ -195,7 +180,9 @@ section p a{
     -o-border-radius: 9px;
 }
 
-
+/*------------------------------------
+  Pie de pagina
+  ------------------------------------*/
 footer{
     margin-top: 15px;
     text-align: center;

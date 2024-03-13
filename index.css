@@ -349,22 +349,19 @@ main{
   ------------------------------------*/
 
 
-footer{
-    margin-top: 15px;
+  footer{
+    margin-top: 11%;
     text-align: center;
     padding: 10px;
     border-top: 2px solid var(--fondo-tex);
-    color:var(--gree);
+    color:var(--font);
     text-align: center;
     height: 5px;
     font-size: 20px;
     font-weight: 700;
-    color: var(--gree);
-}
-
-footer p{
     color: var(--font);
 }
+
 
 .linke:hover{
     color: var(--greey);
