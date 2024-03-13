@@ -144,6 +144,7 @@ main{
     -o-border-radius: 12px;
     resize: none;
     background: var(--fondo-tex);
+    text-align: center;
 }
 
 .encriptada::placeholder, :focus{
@@ -453,10 +454,16 @@ Media
        padding: 2px;
        left: 0;
     }
+    div .tiulo{
+        font-size: 11px;
+        position: absolute;
+        left: 0;
+    }
 
-    .encriptador{
+    .encriptada{
        width: 90%;
        font-size: 24px;
+       text-align: center;
 
     }
 
