@@ -29,3 +29,7 @@ creacion del codigo del index.html
 creacion del codigo del index.js
 
 actualizacion del README.md
+
+creacion del codigo del index.css
+
+ajuste del index.css para que la paguina sea responsiva 
