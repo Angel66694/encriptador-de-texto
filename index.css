@@ -12,18 +12,18 @@ Global css
     --white:#ffffff;
     --dark-blue:#0a3871;
     --greey:#c5c5c5;
-    --fondo-tex:#9e14524d;
+    --fondo-tex:#c0809d4d;
     --rgba:rgba(0,0,0,0.08);
     --fondo-hover-boton:#c30a0a9d;
     --gree:#495057;
-    --boton:#a33ce756;
+    --boton:#a484b956;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(img/1170577-min.jpg);
+    background-image: url(img/night-3129908_1920.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
