@@ -12,4 +12,6 @@ loginForm.addEventListener( "submit", (e)=>{
     alert(`Bienvenido ${validUser.name}`);
     localStorage.setItem('login_success', JSON.stringify(validUser));
     window.location.href="index.html";
+
+    
 })
