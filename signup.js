@@ -8,12 +8,37 @@ signupForm.addEventListener( 'submit', (e)=>{
   const users = JSON.parse(localStorage.getItem('users')) || []
   const isUserRegistered = users.find(user => user.email === email);
    if(isUserRegistered){
-    return alert("El usuario ya esta registrado");
+    return Swal.fire({
+      icon: "warning",
+      text:  "El usuario ya esta registrado",
+      customClass: {
+        popup: 'popup-class'
+    }
+  
+    }).then(()=> {
+      document.querySelector('#name').value = "";
+      document.querySelector ('#signupFotm').focus();
+    })
+    return;
    }
 
    users.push({name: name, email, password: password})
    localStorage.setItem('users', JSON.stringify(users));
-   alert( "Usuario Registrado Correctamente");
-   // regreso al login//
+   Swal.fire({
+    icon: "success",
+    title:"Felizidades!!",
+    text: "Usuario Registrado Correctamente",
+    customClass: {
+      popup: 'popup-class'
+  },
+    showCancelarButton: true,
+    showConfirmarButton: true
+  }).then((result)=>{
+    if(result.isConfirmed){
+      // regreso al login//
    window.location.href="login.html"
+
+    }
+  })
+   
 })

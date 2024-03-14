@@ -10,16 +10,38 @@ loginForm.addEventListener( "submit", (e)=>{
     if(!validUser){
         Swal.fire({
 
-            icon: "warnig",
+            icon: "warning",
             title: "Error",
-            text: "Correo y/o contraseña incorrectos"
-        });
-    } // to prevent page
+            text: "Correo y/o contraseña incorrectos",
+            customClass: {
+                popup: 'popup-class'
+            }
+           
+        }).then(()=> {
+            document.querySelector("#email").value = "";
+            document.querySelector("#password").value = "";
+            document.querySelector ("#loginform").focus();
+          })
+          return;
+    }
+     //-------------Acede a la paguina principal----------//
     Swal.fire({
         icon: "success",
         title: "Acceso correcto",
-        text: `Bienvenido ${validUser.name}`
-    })
+        text: `Bienvenido ${validUser.name}`,
+        width: '30%',
+        background: '#B2BF3F',
+        customClass: {
+            popup: 'popup-class'
+        },
+        showCancelarButton: true,
+        showConfirmarButton: true
+
+    }).then((result)=>{
+        if(result.isConfirmed){
     localStorage.setItem('login_success', JSON.stringify(validUser));
     window.location.href="index.html";
-})
+        };
+    });
+});
+
