@@ -1,35 +1,70 @@
-crea el README.MD
+##################Encriptador de Texto con JavaScript########################
 
-crea el index.html
+Este proyecto es parte del desafío Alura Challenges: Oracle ONE, Lógica de Programación.trabajaremos en una aplicación que encripta y desencripta textos, permitiéndote intercambiar mensajes secretos con otras personas que conozcan el método de encriptación utiliza
 
-crea el index.js
 
-crea el login.html y el login.js
+# Proyecto Encriptador de Texto
+🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓
 
-crea el signup.html y el signup.js
+## Descripción
+Este proyecto es un encriptador de texto simple que utiliza HTML, CSS y JavaScript. Permite a los usuarios encriptar mensajes y copiar el texto encriptado al portapapeles.
 
-creacion de formulario del login.html
+## Características
+- **Encriptación de texto**: Encripta mensajes de texto para mantener la privacidad.
+- **Copiado al portapapeles**: Un botón que permite copiar el texto encriptado fácilmente.
+- **Inicio de sesión y registro**: Páginas para el acceso y registro de usuarios.
 
-creacion del formulario de signup.html
+## Tecnologías Utilizadas
+- HTML
+- CSS
+- JavaScript
 
-creacion del codigo del signup.html
+##Llaves de Encriptación
+Las “llaves” de encriptación que utilizaremos son las siguientes:
 
-creacion del codigo del login.html
+La letra “e” se convierte en “enter”.
+La letra “i” se convierte en “imes”.
+La letra “a” se convierte en “ai”.
+La letra “o” se convierte en “ober”.
+La letra “u” se convierte en “ufat”.
 
-creacion del archivo styles,css
+##Requisitos
+Para cumplir con el desafío, *la aplicación debe cumplir con los siguientes 
 
-creacion del cogo style.css
+#requisitos:
 
-creacion del codigo del login.js
+**Funcionar solo con letras minúsculas.
+**No utilizar letras con acentos ni caracteres especiales.
+**Permitir convertir una palabra a su versión encriptada y viceversa.
 
-creacion del codigo del signup.js
+ ##Por ejemplo:
 
-creacion del codigo del index.html
+**“gato” => “gaitober”
+**“gaitober” => “gato”
 
-creacion del codigo del index.js
+##Funcionalidades Adicionales (Extras)
+**Además de los requisitos básicos, puede agregar funcionalidades extras:
 
-actualizacion del README.md
+##una página de inicio de sesión 
+##una Paguina de registro de usuarios.
 
-creacion del codigo del index.css
+## Instalación
+Para ejecutar este proyecto localmente:
+1. Descarga o clona el repositorio.
+2. Abre el archivo `index.html` en tu navegador.
 
-ajuste del index.css para que la paguina sea responsiva 
+## Uso
+1. Abre la aplicación en tu navegador.
+2. Regístrate o inicia sesión.
+3. Ingresa el texto que deseas encriptar.
+4. Haz clic en el botón de encriptar.
+5. Usa el botón de copiar para copiar el texto encriptado al portapapeles.
+
+## Desarrollador
+Proyecto desarrollado por Miguel Ángel de la Mora - @angel66694.
+
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT.
+
+## Reconocimientos
+- Este proyecto fue creado como parte del curso de programación de Alura Latam y Oracle Next Education (ONE).
