@@ -365,18 +365,31 @@ main{
   box-shadow: inset 1px 1px 3px black;
   }
 
-  .contenedor-icono{
+ .contenedor-icono{
     display: flex;
     position: absolute;
-    top: 85%;
-    left: 30%;
+    top: 78%;
+    left: 60%;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     align-items: center;
-   
+    border: 2px solid white;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+
+  .btn-borrar{
+    position: absolute;
+    top: 52px;
+    left: 20%;
+    color: #ffffff;
   }
 
   .icon-btn{
-   background-color: #acaf50;
    border: none;
    padding: 12px;
    display: inline-block;
@@ -391,8 +404,16 @@ main{
 .icon-btn img{
     width: 40px;
     height: 40px;
+    
 }
 
+.btn-borrar:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
   /*------------------------------------
   Pie de pagina

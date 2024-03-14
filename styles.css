@@ -211,7 +211,7 @@ footer{
 }
 
 
-@media(max-width: 125px){
+@media(max-width: 1250px){
     main{
         display: flex;
         flex-direction: column;
@@ -226,12 +226,32 @@ footer{
         align-items: center;
         width: 100%;
     }
+    .popup-class{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        max-height: 100%;
+       
+}
 
+
+@media(max-width: 720px){
+    .popup-class{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        max-height: 100%;
+    }
+    .copyright{
+        font-size: 20;
+        
+    }
+}
 }
 
 .popup-class{
     border: 3px solid rgb(255, 255, 255);
-    width: 30%;
+    width: 53%;
     background: #7ac95bdd;
     color: #fdf8f8;
     border-radius: 25px;

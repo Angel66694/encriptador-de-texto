@@ -27,13 +27,11 @@ loginForm.addEventListener( "submit", (e)=>{
      //-------------Acede a la paguina principal----------//
     Swal.fire({
         icon: "success",
-        title: "Acceso correcto",
-        text: `Bienvenido ${validUser.name}`,
-        width: '30%',
-        background: '#B2BF3F',
         customClass: {
             popup: 'popup-class'
         },
+        title: "Acceso correcto",
+        text: `Bienvenido ${validUser.name}`,
         showCancelarButton: true,
         showConfirmarButton: true
 
