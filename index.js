@@ -25,5 +25,135 @@ document.getElementById('logout').addEventListener("click", function(event){
 })
 
 
+//----------------seleccion de los elementos-------------------
+
+const btnEncriptar = document.querySelector(".btn-encriptar");
+const textEncriptar = document.querySelector(".encriptada");
+const aviso = document.querySelector(".texto-aviso");
+const resultado = document.querySelector(".evaluar");
+const contenido = document.querySelector(".tarjeta-contenedor");
+const btnCopiar = document.querySelector(".btn-copiar");
+const btnDesncriptar = document.querySelector(".btn-desencriptar");
 
 
+// ------------- boton encriptat-----------------
+btnEncriptar.addEventListener("click", e=>{
+    e.preventDefault();
+    let = texto = textEncriptar.value;
+    let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
+    console.log(txt);
+
+    if(texto == ""){
+      aviso.style.background = "#0A3871";
+      aviso.style.color = "#ffff";
+      aviso.style.fontweight = "800";
+      aviso.textContent = "El campo de texto no debe estar vacio";
+
+      setTimeout(()=>{
+        aviso.removeAttribute("style");
+      },1500);
+    }
+
+    else if(texto !== txt){
+        aviso.style.background = "#0A3871";
+        aviso.style.color = "#ffff";
+        aviso.style.fontweight = "800";
+        aviso.textContent = "No debe tener acentos y/o caracteres especiales";
+  
+        setTimeout(()=>{
+          aviso.removeAttribute("style");
+        },1500);
+    }
+
+    else if(texto !== texto.toLowerCase()){
+        aviso.style.background = "#0A3871";
+      aviso.style.color = "#ffff";
+      aviso.style.fontweight = "800";
+      aviso.textContent = "El texto debe ser solo en minusculas";
+
+      setTimeout(()=>{
+        aviso.removeAttribute("style");
+      },1500);
+
+    }
+    else{
+        texto = texto.replace(/e/mg, "enter");
+        texto = texto.replace(/i/mg, "imes");
+        texto = texto.replace(/a/mg, "ai");
+        texto = texto.replace(/o/mg, "ober");
+        texto = texto.replace(/u/mg, "ufat");
+
+        resultado.innerHTML = texto;
+        btnCopiar.style.visibility = "inherit";
+        contenido.remove();
+    }
+
+})
+
+
+
+// ------------- boton desencriptar-----------------
+btnDesncriptar.addEventListener("click", e=>{
+    e.preventDefault();
+    let = texto = textEncriptar.value;
+    let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
+    console.log(txt);
+
+    if(texto == ""){
+      aviso.style.background = "#0A3871";
+      aviso.style.color = "#ffff";
+      aviso.style.fontweight = "800";
+      aviso.textContent = "El campo de texto no debe estar vacio";
+
+      setTimeout(()=>{
+        aviso.removeAttribute("style");
+      },1500);
+    }
+
+    else if(texto !== txt){
+        aviso.style.background = "#0A3871";
+        aviso.style.color = "#ffff";
+        aviso.style.fontweight = "800";
+        aviso.textContent = "No debe tener acentos y/o caracteres especiales";
+  
+        setTimeout(()=>{
+          aviso.removeAttribute("style");
+        },1500);
+    }
+
+    else if(texto !== texto.toLowerCase()){
+        aviso.style.background = "#0A3871";
+      aviso.style.color = "#ffff";
+      aviso.style.fontweight = "800";
+      aviso.textContent = "El texto debe ser solo en minusculas";
+
+      setTimeout(()=>{
+        aviso.removeAttribute("style");
+      },1500);
+
+    }
+    else{
+        texto = texto.replace(/ente/mg, "e");
+        texto = texto.replace(/imes/mg, "i");
+        texto = texto.replace(/ai/mg, "a");
+        texto = texto.replace(/ober/mg, "o");
+        texto = texto.replace(/ufat/mg, "u");
+
+        resultado.innerHTML = texto;
+        btnCopiar.style.visibility = "inherit";
+        contenido.remove();
+    }
+
+})
+
+// ------------- boton de copiar-----------------
+btnCopiar.addEventListener("click", e=>{
+    e.preventDefault();
+    if(resultado.select){
+        let copiar = resultado;
+    copiar.select();
+    document.execCommand("copy");
+    textEncriptar.value = "";
+    }
+    
+});

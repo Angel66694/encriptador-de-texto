@@ -12,18 +12,18 @@ Global css
     --white:#ffffff;
     --dark-blue:#0a3871;
     --greey:#c5c5c5;
-    --fondo-tex:#9e14524d;
+    --fondo-tex:#4dd4d695;
     --rgba:rgba(0,0,0,0.08);
-    --fondo-hover-boton:#c30a0a9d;
+    --fondo-hover-boton:#3db2e8c9;
     --gree:#495057;
-    --boton:#a33ce756;
+    --boton:#0379a7bd;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(img/1170577-min.jpg);
+    background-image: url(img/trees-4291517_1920.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -65,6 +65,15 @@ header .caja{
    left: 185%;
 }
 
+.tiulo{
+    background: rgba(0, 0, 0, 0.518);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.556);
+}
 /*--------------------
 Cierre de sesion
 -------------------*/
@@ -126,6 +135,7 @@ main{
     width: 60%;
     margin: 168px 0px 0px 148px;
     background: transparent;
+    color: black;
 
 }
 
@@ -136,7 +146,7 @@ main{
     font-size: 32px;
     line-height: 48px;
     outline: none;
-    border: 1px solid var(--greey);
+    border: 1px solid rgba(255, 255, 255, 0.621);
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -145,10 +155,11 @@ main{
     resize: none;
     background: var(--fondo-tex);
     text-align: center;
+    
 }
 
 .encriptada::placeholder, :focus{
-   color: var(--font);
+   color: black;
 }
 
 .encriptador-aviso{
@@ -171,8 +182,17 @@ main{
     line-height: 150%;
     opacity: 0.8;
     color: var(--font);
+    background: black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
+.img-oso{
+    background: #4dd4d614;
+}
 .conten-encriptado{
     display: flex;
     flex-direction: row;
@@ -234,18 +254,19 @@ main{
 }
 
 .tarjeta{
-    width: 270px;
+    width: 280px;
     height: 580px;
     background: var(--fondo-tex);
     box-shadow: 10px 24px 32px -8px var(--greey);
     position: relative;
-    margin-top: 40px;
-    border-radius: 32px;
-    -webkit-border-radius: 32px;
-    -moz-border-radius: 32px;
-    -ms-border-radius: 32px;
-    -o-border-radius: 32px;
+    margin-top: 45px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
     text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.614);
 }
 
 .tarjeta-contenedor{
@@ -279,13 +300,13 @@ main{
     width: 100%;
     height: 485px;
     position: absolute;
-    padding: 2px;
-    top: 0;
-    left: 0;
+    padding: 5px;
+    top: 1;
+    left: 5%;
     font-weight:400 ;
     font-size: 24px;
     line-height: 36px;
-    color: var(--gree);
+    color: black;
     background: transparent;
     border-top-right-radius: 32px;
     border-top-left-radius: 32px;
@@ -306,6 +327,7 @@ main{
     bottom: 0;
     left: 0;
     visibility: hidden;
+    color: #e5e5e5;
     padding: 24px;
     font-size: 16px;
     line-height: 19px;
@@ -343,6 +365,34 @@ main{
   box-shadow: inset 1px 1px 3px black;
   }
 
+  .contenedor-icono{
+    display: flex;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .icon-btn{
+   background-color: #acaf50;
+   border: none;
+   padding: 12px;
+   display: inline-block;
+   cursor: pointer;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+.icon-btn img{
+    width: 40px;
+    height: 40px;
+}
+
 
   /*------------------------------------
   Pie de pagina
@@ -350,7 +400,7 @@ main{
 
 
   footer{
-    margin-top: 11%;
+    margin-top: 25%;
     text-align: center;
     padding: 10px;
     border-top: 2px solid var(--fondo-tex);
