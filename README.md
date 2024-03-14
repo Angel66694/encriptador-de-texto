@@ -19,7 +19,7 @@ Este proyecto es un encriptador de texto simple que utiliza HTML, CSS y JavaScri
 - CSS
 - JavaScript
 
-##Llaves de Encriptación
+## Llaves de Encriptación
 Las “llaves” de encriptación que utilizaremos son las siguientes:
 
 1.La letra “e” se convierte en “enter”.
@@ -32,10 +32,10 @@ Las “llaves” de encriptación que utilizaremos son las siguientes:
 
 5.La letra “u” se convierte en “ufat”.
 
-##Requisitos
+## Requisitos
 Para cumplir con el desafío, *la aplicación debe cumplir con los siguientes 
 
-#requisitos:
+## requisitos:
 
 **Funcionar solo con letras minúsculas.
 
@@ -49,12 +49,11 @@ Para cumplir con el desafío, *la aplicación debe cumplir con los siguientes
 
 **“gaitober” => “gato”
 
-##Funcionalidades Adicionales (Extras)
+## Funcionalidades Adicionales (Extras)
 **Además de los requisitos básicos, puede agregar funcionalidades extras:
+* #una página de inicio de sesión 
 
-##una página de inicio de sesión 
-
-##una Paguina de registro de usuarios.
+* una Paguina de registro de usuarios.
 
 ## Instalación
 Para ejecutar este proyecto localmente:
