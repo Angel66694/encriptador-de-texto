@@ -1,10 +1,10 @@
-##################Encriptador de Texto con JavaScript########################
-
-Este proyecto es parte del desafío Alura Challenges: Oracle ONE, Lógica de Programación.trabajaremos en una aplicación que encripta y desencripta textos, permitiéndote intercambiar mensajes secretos con otras personas que conozcan el método de encriptación utiliza
 
 
 # Proyecto Encriptador de Texto
 🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓
+
+
+##Este proyecto es parte del desafío Alura Challenges: Oracle ONE, Lógica de Programación.trabajaremos en una aplicación que encripta y desencripta textos, permitiéndote intercambiar mensajes secretos con otras personas que conozcan el método de encriptación utiliza
 
 ## Descripción
 Este proyecto es un encriptador de texto simple que utiliza HTML, CSS y JavaScript. Permite a los usuarios encriptar mensajes y copiar el texto encriptado al portapapeles.
