@@ -22,11 +22,11 @@ Este proyecto es un encriptador de texto simple que utiliza HTML, CSS y JavaScri
 ##Llaves de Encriptación
 Las “llaves” de encriptación que utilizaremos son las siguientes:
 
-La letra “e” se convierte en “enter”.
-La letra “i” se convierte en “imes”.
-La letra “a” se convierte en “ai”.
-La letra “o” se convierte en “ober”.
-La letra “u” se convierte en “ufat”.
+1.La letra “e” se convierte en “enter”.
+2.La letra “i” se convierte en “imes”.
+3.La letra “a” se convierte en “ai”.
+4.La letra “o” se convierte en “ober”.
+5.La letra “u” se convierte en “ufat”.
 
 ##Requisitos
 Para cumplir con el desafío, *la aplicación debe cumplir con los siguientes 
