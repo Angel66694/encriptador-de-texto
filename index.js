@@ -6,7 +6,7 @@ if(!user){
 else{
      Swal.fire({
         title: "¡Bienvenido!",
-        text: `Hola ${user.name}, gracias por entrar a mi paguina`,
+        text: `Hola ${user.name}, gracias por entrar a mi pagina`,
         backdrop: true,
         confirmButtonText: "Aceptar",
         customClass: {
