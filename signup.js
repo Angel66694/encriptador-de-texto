@@ -10,6 +10,22 @@ signupForm.addEventListener( 'submit', (e)=>{
   const users = JSON.parse(localStorage.getItem('users')) || []
   const isUserRegistered = users.find(user => user.email === email);
   //---------registro  de usuario---------------//
+  if(password.length < 8){
+    return Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: "La contraseña debe tener al menos 8 caracteres",
+      confirmButtonText: "Aceptar",
+      timer: 4500,
+      timerProgressBar: true,
+      toast: true,
+      background:"#7ac95bdd",
+      customClass: {
+        popup: 'popop-class-mini'
+      }
+
+    })
+  }
    if(isUserRegistered){
     return Swal.fire({
       icon: "warning",
