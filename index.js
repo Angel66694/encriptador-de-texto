@@ -3,27 +3,49 @@ const user = JSON.parse(localStorage.getItem('login_success')) || false
 if(!user){
     window.location.href = 'login.html';
 }
+else{
+     Swal.fire({
+        title: "¡Bienvenido!",
+        text: `Hola ${user.name}, gracias por entrar a mi paguina`,
+        backdrop: true,
+        confirmButtonText: "Aceptar",
+        customClass: {
+          popup: 'popup-class'
+      },
 
-document.getElementById('logout').addEventListener("click", function(event){
-
-    const mainSection = document.getElementById('logout');
-    const targetElement = event.target;
-    //verifica si el clic se origino dentro de la seccion espesificada//
-    if(mainSection.contains(targetElement)){
-        //realiza la accion de cierre de sesion
-    const logout = document.querySelector('#logout');
-    const parrafo = document.getElementById('parrafo')
-    logout,addEventListener('click', ()=>{
-        parrafo.style.display = 'block';
-        localStorage.removeItem('login_success');
-        window.location.href = 'login.html';
-    })
-
-    }else{
-        //no realizar ninguna accion//
+     })
     }
-})
+document.getElementById('logout').addEventListener("click", function(event){
+    const targetElement = event.target;
+  //-------------------Verifica que este una sesion iniciada-------------//
+   if(localStorage.getItem('login_success')){
+    Swal.fire({
+      icon: "warning",
+        title: "Cerrando sesion!!",
+        text:  "¿Esta seguro de que quiere cerrar sesión?",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, Cerrar Sesión",
+        customClass: {
+          popup: 'popup-class'
+      },
 
+    }).then((resul) =>{
+      if(resul.isConfirmed){
+         localStorage.removeItem('login_success');
+         window.location.href="login.html";
+       }
+    });
+   }else{
+    const logout = document.querySelector('#logout');
+    logout,addEventListener('click', ()=>{
+       localStorage.removeItem('login_success');
+        window.location.href = 'login.html';
+   })
+  }
+});
+    
 
 //----------------seleccion de los elementos-------------------
 
@@ -40,13 +62,15 @@ const btnDesncriptar = document.querySelector(".btn-desencriptar");
 btnEncriptar.addEventListener("click", e=>{
     e.preventDefault();
     let = texto = textEncriptar.value;
-    let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
+    let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f0-9']/g, " ");
 
     if(texto == ""){
-      Swal.fire({
+      return Swal.fire({
         icon: 'info',
         title: 'Oops...',
         text: 'El campo de texto no debe estar vacio',
+        backdrop: true,
+        confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
       },
@@ -59,24 +83,26 @@ btnEncriptar.addEventListener("click", e=>{
   
 
     else if(texto !== txt){
-      Swal.fire({
+     return Swal.fire({
         icon: 'info',
         title: 'Oops...',
         text: 'No debe tener acentos y/o caracteres especiales',
+        confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
       },
     }),
         setTimeout(()=>{
-          //aviso.removeAttribute("style");
+        aviso.removeAttribute("style");
         },1500);
     }
 
     else if(texto !== texto.toLowerCase()){
-      Swal.fire({
+    return  Swal.fire({
         icon: 'info',
         title: 'Oops...',
         text: 'El texto debe ser solo en minusculas',
+        confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
       },
@@ -94,9 +120,9 @@ btnEncriptar.addEventListener("click", e=>{
         texto = texto.replace(/o/mg, "ober");
         texto = texto.replace(/u/mg, "ufat");
 
-       // resultado.innerHTML = texto;
-        //btnCopiar.style.visibility = "inherit";
-      //  contenido.remove();
+       resultado.innerHTML = texto;
+       btnCopiar.style.visibility = "inherit";
+       contenido.remove();
     }
 
 })
@@ -107,14 +133,15 @@ btnEncriptar.addEventListener("click", e=>{
 btnDesncriptar.addEventListener("click", e=>{
     e.preventDefault();
     let = texto = textEncriptar.value;
-    let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
-    console.log(txt);
-
-    if(texto == ""){
-      Swal.fire({
+    let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f0-9']/g, " ");
+    
+//--------------Advertencias-----------------------------//
+   if(texto == ""){
+     return Swal.fire({
         icon: 'info',
         title: 'Oops...',
         text: 'El campo de texto no debe estar vacio',
+        confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
       },
@@ -126,10 +153,11 @@ btnDesncriptar.addEventListener("click", e=>{
     }
 
     else if(texto !== txt){
-      Swal.fire({
+    return  Swal.fire({
         icon: 'info',
         title: 'Oops...',
         text: 'No debe tener acentos y/o caracteres especiales',
+        confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
       },
@@ -141,10 +169,11 @@ btnDesncriptar.addEventListener("click", e=>{
     }
 
     else if(texto !== texto.toLowerCase()){
-        Swal.fire({
+     return   Swal.fire({
         icon: 'info',
         title: 'Oops...',
         text: 'El texto debe ser solo en minusculas',
+        confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
       },
