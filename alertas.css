@@ -1,7 +1,10 @@
+/*-------------------------------------
+Estilos de las alertas de ventana
+-------------------------------------*/
 .popup-class{
-    border: 3px solid green;
-    width: 35%;
-    background: white;
+    border: 3px solid rgb(204, 195, 195);
+    width: 33%;
+    background: #7ac95bdd;
     color: #fdf8f8;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -10,3 +13,11 @@
     -o-border-radius: 25px;
 }
 
+@media(max-width: 720px){
+    .popup-class{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        max-height: 100%;
+    }
+}
