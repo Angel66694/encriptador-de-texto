@@ -13,6 +13,7 @@ loginForm.addEventListener( "submit", (e)=>{
             icon: "warning",
             title: "Error",
             text: "Correo y/o contraseña incorrectos",
+            confirmButtonText: "Aceptar",
             customClass: {
                 popup: 'popup-class'
             }
@@ -33,7 +34,8 @@ loginForm.addEventListener( "submit", (e)=>{
         title: "Acceso correcto",
         text: `Bienvenido ${validUser.name}`,
         showCancelarButton: true,
-        showConfirmarButton: true
+        showConfirmarButton: true,
+        confirmButtonText: "Aceptar",
 
     }).then((result)=>{
         if(result.isConfirmed){
