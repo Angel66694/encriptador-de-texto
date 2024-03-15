@@ -41,7 +41,6 @@ btnEncriptar.addEventListener("click", e=>{
     e.preventDefault();
     let = texto = textEncriptar.value;
     let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
-    console.log(txt);
 
     if(texto == ""){
       aviso.style.background = "#0A3871";
@@ -157,3 +156,15 @@ btnCopiar.addEventListener("click", e=>{
     }
     
 });
+
+//------------------------------------
+//Boton de borrado//
+//-----------------------------------
+
+const botonBorrado = document.querySelector(".icon-btn");
+
+
+ document.querySelector(".encriptada").value = "";
+ document.querySelector(".evaluar").value = "";
+})
+

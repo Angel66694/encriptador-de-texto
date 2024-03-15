@@ -404,15 +404,27 @@ main{
 .icon-btn img{
     width: 40px;
     height: 40px;
-    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
-
-.btn-borrar:hover{
+.contenedor-icono:hover,
+.icon-btn:hover{
+    background-color: white;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+    position: absolute;
+    font-size: 10px;
 }
 
   /*------------------------------------
@@ -470,16 +482,19 @@ Media
         flex-direction: column;
         align-items: center;
         width: 100%;
+        
     }
     .conten-encriptado{
         display: flex;
         align-items: center;
         position: inherit;
+        
     }
 
     .encriptador-aviso{
         position: inherit;
         margin: 15px;
+        
     }
     .tarjeta{
         width: 665px;
@@ -487,6 +502,7 @@ Media
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 25px;
     }
     .tarjeta-contenedor{
         display: block;
@@ -506,6 +522,12 @@ Media
         position: inherit;
         width: 100%;
 
+    }
+
+   
+    .icon-btn{
+        position: inherit;
+      
     }
     .evaluar{
         width: 100%;
@@ -545,6 +567,14 @@ Media
 
     }
 
+    .contenedor-icono, .btn-borrar{
+        position: inherit;
+        width: auto;
+        height: auto;
+       
+        
+
+    }
     .copyright{
         font-size: 20;
         
