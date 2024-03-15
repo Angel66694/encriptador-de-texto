@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/imagenes/vicon.ico">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="alertas.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+
     <title>Encriptador</title>
 </head>
 <section>
-<body class="home">
-    <!--encabezado-->
-    <header>
-        <a href="#" rel="">
-            <img src="img/imagenes/logo.svg" alt="Logo de aluralatam" class="logo">
-        </a>
-    </header>
-    <!--boton de cierre de sesion-->
-    <div class="cierre">
-        <h1 class="tiulo" id="titulo"> Encriptador de texto</h1>
-        <button class="logout" id="logout">Cerrar sesion</button>
-    
-    </div>
-    <!--principal-->
-    <main>
-        <section class="encriptador">
-            <textarea name="encriptada" class="encriptada" placeholder="Ingrese el texto aqui" required ></textarea>
-            <div class="encriptador-aviso">
-                <img src="img/imagenes/aviso.svg" alt="texto de aviso" class="imag-aviso">
-                <p class="texto-aviso">Solo letras minusculas y sin acentos</p>
-            </div>
-            <div class="conten-encriptado">
-                <button type="submit" class="btn-encriptar">encriptador</button>
-                <button type="submit" class="btn-desencriptar">Desencriptar</button>
-                
 
-            </div>
+    <body class="home">
+        <!--encabezado-->
+        <header>
+            <a href="#" rel="">
+                <img src="img/imagenes/logo.svg" alt="Logo de aluralatam" class="logo">
+            </a>
+        </header>
+        <!--boton de cierre de sesion-->
+        <div class="cierre">
+            <h1 class="tiulo" id="titulo"> Encriptador de texto</h1>
+            <button class="logout" id="logout">Cerrar sesion</button>
 
-        </section>
-        <section class="tarjeta">
-            <div class="tarjeta-contenedor">
-                <img src="img/img2/monitors-typing.gif" alt="imagen de uso con computadora" class="img-oso">
-                <p class="texto-uno">No se encontro ningun mensaje</p>
-                <p class="texto-dos">Ingresa el texto que desea incriptar o desencriptar</p>
-            </div>
-            <textarea type="mensaje" class="evaluar" readonly></textarea>
-            <button type="submit" class="btn-copiar">Copiar</button>
-          
-        </section>
-       <div class="contenedor-icono">
-            <button class="icon-btn">
-                <p class="btn-borrar">Borrar</p>
-                <img src="img/img2/basura.png" alt="icono">
-            </button>
         </div>
-    </main>
-    <!--pie de pagina-->
-    <script src="index.js"></script>
+        <!--principal-->
+        <main>
+            <section class="encriptador">
+                <textarea name="encriptada" class="encriptada" placeholder="Ingrese el texto aqui" required></textarea>
+                <div class="encriptador-aviso">
+                    <img src="img/imagenes/aviso.svg" alt="texto de aviso" class="imag-aviso">
+                </div>
+                <div class="conten-encriptado">
+                    <button type="submit" class="btn-encriptar">encriptador</button>
+                    <button type="submit" class="btn-desencriptar">Desencriptar</button>
 
-    <footer>
-        <p class="copyright">&copy copyright 2024 - Encriptador de texto - Desarrollado por Angel66694</p>
-        <a href="#" rel="">
-            <img src="img/imagenes/linkedin.svg" alt="logo linkedin" class="linke">
-            <img src="img/imagenes/github.svg" alt="logo github" class="github">
 
-        </a>
-         
-    </footer>
-</body>
+                </div>
+
+            </section>
+            <!--contenedor de texto encriptado-->
+            <section class="tarjeta">
+                <div class="tarjeta-contenedor">
+                    <img src="img/img2/monitors-typing.gif" alt="imagen de uso con computadora" class="img-oso">
+                    <p class="texto-uno">No se encontro ningun mensaje</p>
+                    <p class="texto-dos">Ingresa el texto que desea incriptar o desencriptar</p>
+                </div>
+                <textarea type="mensaje" class="evaluar" readonly></textarea>
+                <button type="submit" class="btn-copiar">Copiar</button>
+
+            </section>
+            <!--Boton para reinciar la paguina -->
+            <div class="contenedor-icono">
+                <button onclick="borrar()" class="icon-btn">
+                    <p class="btn-borrar">Borrar</p>
+                </button>
+            </div>
+        </main>
+        <!--pie de pagina-->
+        <script src="index.js"></script>
+
+        <footer>
+            <p class="copyright">&copy copyright 2024 - Encriptador de texto - Desarrollado por Angel66694</p>
+            <a href="#" rel="">
+                <img src="img/imagenes/linkedin.svg" alt="logo linkedin" class="linke">
+                <img src="img/imagenes/github.svg" alt="logo github" class="github">
+
+            </a>
+
+        </footer>
+    </body>
 </section>
 
 </html>

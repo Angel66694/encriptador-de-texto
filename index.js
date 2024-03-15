@@ -43,33 +43,45 @@ btnEncriptar.addEventListener("click", e=>{
     let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
 
     if(texto == ""){
-      aviso.style.background = "#0A3871";
-      aviso.style.color = "#ffff";
-      aviso.style.fontweight = "800";
-      aviso.textContent = "El campo de texto no debe estar vacio";
-
+      Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'El campo de texto no debe estar vacio',
+        customClass: {
+          popup: 'popup-class'
+      },
+      }),
+    
       setTimeout(()=>{
         aviso.removeAttribute("style");
       },1500);
     }
+  
 
     else if(texto !== txt){
-        aviso.style.background = "#0A3871";
-        aviso.style.color = "#ffff";
-        aviso.style.fontweight = "800";
-        aviso.textContent = "No debe tener acentos y/o caracteres especiales";
-  
+      Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'No debe tener acentos y/o caracteres especiales',
+        customClass: {
+          popup: 'popup-class'
+      },
+    }),
         setTimeout(()=>{
-          aviso.removeAttribute("style");
+          //aviso.removeAttribute("style");
         },1500);
     }
 
     else if(texto !== texto.toLowerCase()){
-        aviso.style.background = "#0A3871";
-      aviso.style.color = "#ffff";
-      aviso.style.fontweight = "800";
-      aviso.textContent = "El texto debe ser solo en minusculas";
-
+      Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'El texto debe ser solo en minusculas',
+        customClass: {
+          popup: 'popup-class'
+      },
+    }),
+     
       setTimeout(()=>{
         aviso.removeAttribute("style");
       },1500);
@@ -82,9 +94,9 @@ btnEncriptar.addEventListener("click", e=>{
         texto = texto.replace(/o/mg, "ober");
         texto = texto.replace(/u/mg, "ufat");
 
-        resultado.innerHTML = texto;
-        btnCopiar.style.visibility = "inherit";
-        contenido.remove();
+       // resultado.innerHTML = texto;
+        //btnCopiar.style.visibility = "inherit";
+      //  contenido.remove();
     }
 
 })
@@ -99,10 +111,14 @@ btnDesncriptar.addEventListener("click", e=>{
     console.log(txt);
 
     if(texto == ""){
-      aviso.style.background = "#0A3871";
-      aviso.style.color = "#ffff";
-      aviso.style.fontweight = "800";
-      aviso.textContent = "El campo de texto no debe estar vacio";
+      Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'El campo de texto no debe estar vacio',
+        customClass: {
+          popup: 'popup-class'
+      },
+    }),
 
       setTimeout(()=>{
         aviso.removeAttribute("style");
@@ -110,10 +126,14 @@ btnDesncriptar.addEventListener("click", e=>{
     }
 
     else if(texto !== txt){
-        aviso.style.background = "#0A3871";
-        aviso.style.color = "#ffff";
-        aviso.style.fontweight = "800";
-        aviso.textContent = "No debe tener acentos y/o caracteres especiales";
+      Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'No debe tener acentos y/o caracteres especiales',
+        customClass: {
+          popup: 'popup-class'
+      },
+    }),
   
         setTimeout(()=>{
           aviso.removeAttribute("style");
@@ -121,10 +141,15 @@ btnDesncriptar.addEventListener("click", e=>{
     }
 
     else if(texto !== texto.toLowerCase()){
-        aviso.style.background = "#0A3871";
-      aviso.style.color = "#ffff";
-      aviso.style.fontweight = "800";
-      aviso.textContent = "El texto debe ser solo en minusculas";
+        Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'El texto debe ser solo en minusculas',
+        customClass: {
+          popup: 'popup-class'
+      },
+    }),
+     
 
       setTimeout(()=>{
         aviso.removeAttribute("style");
@@ -160,6 +185,6 @@ btnCopiar.addEventListener("click", e=>{
 //------------------------------------
 //Boton de borrado//
 //-----------------------------------
-
-
-
+function borrar(){
+  location.reload();
+}

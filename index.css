@@ -365,66 +365,25 @@ main{
   box-shadow: inset 1px 1px 3px black;
   }
 
- .contenedor-icono{
-    display: flex;
-    position: absolute;
-    top: 78%;
-    left: 60%;
-    width: 80px;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 45px;
-    -webkit-border-radius: 45px;
-    -moz-border-radius: 45px;
-    -ms-border-radius: 45px;
-    -o-border-radius: 45px;
-}
-
-  .btn-borrar{
-    position: absolute;
-    top: 52px;
-    left: 20%;
-    color: #ffffff;
-  }
-
   .icon-btn{
-   border: none;
-   padding: 12px;
-   display: inline-block;
-   cursor: pointer;
-   border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-}
-
-.icon-btn img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-.contenedor-icono:hover,
-.icon-btn:hover{
-    background-color: white;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    position: absolute;
+    top: 55%;
+    left: 57%;
+    width: 5%;
+    height: 10%;
     border-radius: 45px;
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
     -ms-border-radius: 45px;
     -o-border-radius: 45px;
-    position: absolute;
-    font-size: 10px;
+    border: 3px solid black;
+    background: var(--fondo-tex);
+}
+
+.btn-borrar{
+    font-size: 18px;
+    background: var(--fondo-tex);
+    color: black;
 }
 
   /*------------------------------------
@@ -524,15 +483,19 @@ Media
 
     }
 
-   
     .icon-btn{
-        position: inherit;
-      
+        display: block;
+        width: 9%;
+        height: 7%;
+        float: right;
+        top:  72%;
+        left: 45%;
     }
     .evaluar{
         width: 100%;
         height: 210px;
         padding: 10px;
+        
     }
 
 }
@@ -567,13 +530,13 @@ Media
 
     }
 
-    .contenedor-icono, .btn-borrar{
-        position: inherit;
-        width: auto;
-        height: auto;
-       
-        
-
+    .icon-btn{
+        display: block;
+        width: 20%;
+        height: 9%;
+        float: right;
+        top:  120%;
+        left: 43%;
     }
     .copyright{
         font-size: 20;
@@ -581,3 +544,8 @@ Media
     }
 
 }
+
+/*----------------------------------
+Ventanas de informacion
+----------------------------------*/
+
