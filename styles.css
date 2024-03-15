@@ -236,27 +236,10 @@ footer{
 }
 
 @media(max-width: 720px){
-    .popup-class{
-        max-width: 100%;
-        width: auto;
-        height: auto;
-        max-height: 100%;
-    }
+ 
     .copyright{
         font-size: 20;
         
     }
 }
 
-
-.popup-class{
-    border: 3px solid rgb(255, 255, 255);
-    width: 53%;
-    background: #7ac95bdd;
-    color: #fdf8f8;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
