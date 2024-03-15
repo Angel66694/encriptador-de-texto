@@ -114,11 +114,11 @@ btnEncriptar.addEventListener("click", e=>{
 
     }
     else{
-        texto = texto.replace(/e/mg, "enter");
-        texto = texto.replace(/i/mg, "imes");
-        texto = texto.replace(/a/mg, "ai");
-        texto = texto.replace(/o/mg, "ober");
-        texto = texto.replace(/u/mg, "ufat");
+        texto = texto.replace(/e/g, "enter");
+        texto = texto.replace(/i/g, "imes");
+        texto = texto.replace(/a/g, "ai");
+        texto = texto.replace(/o/g, "ober");
+        texto = texto.replace(/u/g, "ufat");
 
        resultado.innerHTML = texto;
        btnCopiar.style.visibility = "inherit";
@@ -186,11 +186,11 @@ btnDesncriptar.addEventListener("click", e=>{
 
     }
     else{
-        texto = texto.replace(/ente/mg, "e");
-        texto = texto.replace(/imes/mg, "i");
-        texto = texto.replace(/ai/mg, "a");
-        texto = texto.replace(/ober/mg, "o");
-        texto = texto.replace(/ufat/mg, "u");
+        texto = texto.replace(/enter/g, "e");
+        texto = texto.replace(/imes/g, "i");
+        texto = texto.replace(/ai/g, "a");
+        texto = texto.replace(/ober/g, "o");
+        texto = texto.replace(/ufat/g, "u");
 
         resultado.innerHTML = texto;
         btnCopiar.style.visibility = "inherit";
