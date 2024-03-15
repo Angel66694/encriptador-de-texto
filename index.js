@@ -161,10 +161,5 @@ btnCopiar.addEventListener("click", e=>{
 //Boton de borrado//
 //-----------------------------------
 
-const botonBorrado = document.querySelector(".icon-btn");
 
-
- document.querySelector(".encriptada").value = "";
- document.querySelector(".evaluar").value = "";
-})
 
