@@ -1,4 +1,4 @@
-//manda a la paguina login si no esta una sesion iniciada 
+//manda a la pagina login si no esta una sesión iniciada 
 const user = JSON.parse(localStorage.getItem('login_success')) || false
 if(!user){
     window.location.href = 'login.html';
@@ -17,11 +17,11 @@ else{
     }
 document.getElementById('logout').addEventListener("click", function(event){
     const targetElement = event.target;
-  //-------------------Verifica que este una sesion iniciada-------------//
+  //-------------------Verifica que este una sesión iniciada-------------//
    if(localStorage.getItem('login_success')){
     Swal.fire({
       icon: "warning",
-        title: "Cerrando sesion!!",
+        title: "Cerrando sesión!!",
         text:  "¿Esta seguro de que quiere cerrar sesión?",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
@@ -47,7 +47,7 @@ document.getElementById('logout').addEventListener("click", function(event){
 });
     
 
-//----------------seleccion de los elementos-------------------
+//----------------selección de los elementos-------------------
 
 const btnEncriptar = document.querySelector(".btn-encriptar");
 const textEncriptar = document.querySelector(".encriptada");
@@ -58,7 +58,7 @@ const btnCopiar = document.querySelector(".btn-copiar");
 const btnDesncriptar = document.querySelector(".btn-desencriptar");
 
 
-// ------------- boton encriptat-----------------
+// ------------- botón encriptar-----------------
 btnEncriptar.addEventListener("click", e=>{
     e.preventDefault();
     let = texto = textEncriptar.value;
@@ -68,7 +68,7 @@ btnEncriptar.addEventListener("click", e=>{
       return Swal.fire({
         icon: 'info',
         title: 'Oops...',
-        text: 'El campo de texto no debe estar vacio',
+        text: 'El campo de texto no debe estar vació',
         backdrop: true,
         confirmButtonText: "Aceptar",
         customClass: {
@@ -101,7 +101,7 @@ btnEncriptar.addEventListener("click", e=>{
     return  Swal.fire({
         icon: 'info',
         title: 'Oops...',
-        text: 'El texto debe ser solo en minusculas',
+        text: 'El texto debe ser solo en minúsculas',
         confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
@@ -129,7 +129,7 @@ btnEncriptar.addEventListener("click", e=>{
 
 
 
-// ------------- boton desencriptar-----------------
+// ------------- botón Desencriptar-----------------
 btnDesncriptar.addEventListener("click", e=>{
     e.preventDefault();
     let = texto = textEncriptar.value;
@@ -140,7 +140,7 @@ btnDesncriptar.addEventListener("click", e=>{
      return Swal.fire({
         icon: 'info',
         title: 'Oops...',
-        text: 'El campo de texto no debe estar vacio',
+        text: 'El campo de texto no debe estar vació',
         confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
@@ -172,7 +172,7 @@ btnDesncriptar.addEventListener("click", e=>{
      return   Swal.fire({
         icon: 'info',
         title: 'Oops...',
-        text: 'El texto debe ser solo en minusculas',
+        text: 'El texto debe ser solo en minúsculas',
         confirmButtonText: "Aceptar",
         customClass: {
           popup: 'popup-class'
@@ -199,7 +199,7 @@ btnDesncriptar.addEventListener("click", e=>{
 
 })
 
-// ------------- boton de copiar-----------------
+// ------------- botón de copiar-----------------
 btnCopiar.addEventListener("click", e=>{
     e.preventDefault();
     if(resultado.select){
@@ -212,7 +212,7 @@ btnCopiar.addEventListener("click", e=>{
 });
 
 //------------------------------------
-//Boton de borrado//
+//Botón de borrado//
 //-----------------------------------
 function borrar(){
   location.reload();

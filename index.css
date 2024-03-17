@@ -14,9 +14,9 @@ Global css
     --greey:#c5c5c5;
     --fondo-tex:#4dd4d695;
     --rgba:rgba(0,0,0,0.08);
-    --fondo-hover-boton:#3db2e8c9;
+    --fondo-hover-botón:#3db2e8c9;
     --gree:#495057;
-    --boton:#0379a7bd;
+    --botón:#0379a7bd;
 }
 
 *{
@@ -76,7 +76,7 @@ header .caja{
     border: 1px solid rgba(255, 255, 255, 0.556);
 }
 /*--------------------
-Cierre de sesion
+Cierre de sesión
 -------------------*/
 div .cierre{
     width: 100%;
@@ -110,7 +110,7 @@ div .logout{
     line-height: 3px;
     text-align: center;
     color: var(--white);
-    background: var(--boton);
+    background: var(--botón);
     border: 1px solid var(--font);
     border-radius: 24px;
     -webkit-border-radius: 24px;
@@ -214,7 +214,7 @@ main{
     line-height: 19px;
     text-align: center;
     color: var(--white);
-    background: var(--boton);
+    background: var(--botón);
     border: 1px solid var(--font);
     border-radius: 24px;
     -webkit-border-radius: 24px;
@@ -236,7 +236,7 @@ main{
     line-height: 19px;
     text-align: center;
     color: var(--white);
-    background: var(--boton);
+    background: var(--botón);
     border: 1px solid var(--font);
     border-radius: 24px;
     -webkit-border-radius: 24px;
@@ -250,7 +250,7 @@ main{
 
 .conten-encriptado button:active{
     box-shadow: inset 2px 2px 4px var(--font);
-    inset: -3px -4px 8px var(--fondo-hover-boton);
+    inset: -3px -4px 8px var(--fondo-hover-botón);
 
 }
 
@@ -333,7 +333,7 @@ main{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    background: var(--boton);
+    background: var(--botón);
     border: 1px solid var(--font);
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -347,7 +347,7 @@ main{
 .btn-desencriptar:hover,
 .btn-copiar:hover,
 .logout:hover{
-    background-color:var(--fondo-hover-boton);
+    background-color:var(--fondo-hover-botón);
     transform: scale(0.97);
     -webkit-transform: scale(0.97);
     -moz-transform: scale(0.97);
@@ -564,6 +564,6 @@ Media
 }
 
 /*----------------------------------
-Ventanas de informacion
+Ventanas de información
 ----------------------------------*/
 

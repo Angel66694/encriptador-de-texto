@@ -25,7 +25,7 @@ loginForm.addEventListener( "submit", (e)=>{
           })
           return;
     }
-     //-------------Acede a la paguina principal----------//
+     //-------------Acede a la pagina principal----------//
     Swal.fire({
         icon: "success",
         customClass: {

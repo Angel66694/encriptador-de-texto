@@ -2,7 +2,7 @@ const signupForm = document.querySelector('#signupFotm')
 signupForm.addEventListener( 'submit', (e)=>{
   e.preventDefault ()
 
-  //----------Documentacion--------------------//
+  //----------Documentación--------------------//
   const name = document.querySelector('#name').value;
   const  email=document.querySelector("#email").value;
   const  password=document.querySelector("#password").value;
@@ -46,7 +46,7 @@ signupForm.addEventListener( 'submit', (e)=>{
    localStorage.setItem('users', JSON.stringify(users));
    Swal.fire({
     icon: "success",
-    title:"Felizidades!!",
+    title:"Felicidades!!",
     text: "Usuario Registrado Correctamente",
     confirmButtonText: "Aceptar",
     customClass: {

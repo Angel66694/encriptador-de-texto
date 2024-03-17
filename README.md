@@ -4,7 +4,7 @@
 🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓🤓
 
 
-##Este proyecto es parte del desafío Alura Challenges: Oracle ONE, Lógica de Programación.trabajaremos en una aplicación que encripta y desencripta textos, permitiéndote intercambiar mensajes secretos con otras personas que conozcan el método de encriptación utiliza
+##Este proyecto es parte del desafío Alura Challenges: Oracle ONE, Lógica de Programación.trabajaremos en una aplicación que encripta y desencripa textos, permitiéndote intercambiar mensajes secretos con otras personas que conozcan el método de encriptación utiliza
 
 ## Descripción
 Este proyecto es un encriptador de texto simple que utiliza HTML, CSS y JavaScript. Permite a los usuarios encriptar mensajes y copiar el texto encriptado al portapapeles.
@@ -53,7 +53,7 @@ Para cumplir con el desafío, la aplicación debe cumplir con los siguientes
 **Además de los requisitos básicos, puede agregar funcionalidades extras:
 * una página de inicio de sesión 
 
-* una Paguina de registro de usuarios.
+* una Pagina de registro de usuarios.
 
 ## Instalación
 Para ejecutar este proyecto localmente:
@@ -79,4 +79,4 @@ Proyecto desarrollado por Miguel Ángel de la Mora - @angel66694.
 Este proyecto está licenciado bajo la Licencia MIT.
 
 ## Reconocimientos
-- Este proyecto fue creado como parte del curso de programación de Alura Latam y Oracle Next Education (ONE).
+- Este proyecto fue creado como parte del curso de programación de Alura Latam y Oracle Next Education (ONE). 
