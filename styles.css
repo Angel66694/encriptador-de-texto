@@ -11,17 +11,11 @@
     --greey:#c5c5c5;
     --fondo-tex:#9f0d4f4d;
     --rgba:rgba(0,0,0,0.08);
-    --fondo-hover-boton:#a9730ecc;
+    --fondo-hover-botón:#a9730ecc;
     --gree:#495057;
 }
 
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-    
-}
+
 
 ::selection{
     background: var(--dark-blue);
@@ -126,7 +120,7 @@ section form input{
 
 section form input[type=submit]{
     margin-top: 1.5em;
-    background-color: var(--fondo-hover-boton);
+    background-color: var(--fondo-hover-botón);
     color: var(--font);
     font-family: var(--font-mono);
     transition: var(--transition);
