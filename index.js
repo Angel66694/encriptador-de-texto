@@ -186,13 +186,13 @@ btnDesncriptar.addEventListener("click", e=>{
 
     }
     else{
-        texto = texto.replace(/enter/g, "e");
-        texto = texto.replace(/imes/g, "i");
-        texto = texto.replace(/ai/g, "a");
-        texto = texto.replace(/ober/g, "o");
-        texto = texto.replace(/ufat/g, "u");
+      texto = texto.replace(/ufat/g, "u");
+       texto = texto.replace(/ober/g, "o");
+       texto = texto.replace(/ai/g, "a");
+       texto = texto.replace(/imes/g, "i");
+       texto = texto.replace(/enter/g, "e");
 
-        resultado.innerHTML = texto;
+            resultado.innerHTML = texto;
         btnCopiar.style.visibility = "inherit";
         contenido.remove();
     }
